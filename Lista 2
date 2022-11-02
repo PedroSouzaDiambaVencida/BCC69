@@ -75,10 +75,10 @@ int main()
     if(n1>n2){
         dif1=n1-n2;
         printf("o maior numero entre os dois eh: %d/n", n1);
-        printf("a diferenÁa entre esses numeroes eh: %d", dif1);
+        printf("a diferen√ßa entre esses numeroes eh: %d", dif1);
     }else{
         printf("o maior numeros entre os dois eh: %d", n2);
-        printf("a diferenÁa entre esses numeros eh: %d", dif2, dif2=n1-n2);
+        printf("a diferen√ßa entre esses numeros eh: %d", dif2, dif2=n1-n2);
     }
 */
 
@@ -220,7 +220,7 @@ int main()
         printf("corresponde a segunda");
         break;
     case 3 :
-        printf("corresponde a terÁa");
+        printf("corresponde a ter√ßa");
         break;
     case 4 :
         printf("corresponde a quarta");
@@ -251,7 +251,7 @@ int main()
         printf("fevereiro");
         break;
     case 3 :
-        printf("marÁo");
+        printf("mar√ßo");
         break;
     case 4 :
         printf("abril");
@@ -303,12 +303,12 @@ int main()
 
 /* EX018
     int op, numba, numba2, res;
-    printf("escolha uma opÁ„o \n");
+    printf("escolha uma op√ß√£o \n");
     printf("1 - soma \n");
-    printf("2 - subtraÁ„o \n");
-    printf("3 - multiplicaÁ„o \n");
-    printf("4 - divis„o \n");
-    printf("opÁ„o: ");
+    printf("2 - subtra√ß√£o \n");
+    printf("3 - multiplica√ß√£o \n");
+    printf("4 - divis√£o \n");
+    printf("op√ß√£o: ");
     scanf("%d", &op);
 
     switch (op){
@@ -322,33 +322,33 @@ int main()
         printf("insira dois numeros\n");
         scanf("%d %d", &numba, &numba2);
         res=numba-numba2;
-        printf("a subtraÁ„o eh: %d\n", res);
+        printf("a subtra√ß√£o eh: %d\n", res);
         break;
     case 3 :
         printf("insira dois numeros\n");
         scanf("%d %d", &numba, &numba2);
         res=numba*numba2;
-        printf("a multiplicaÁ„o eh: %d\n", res);
+        printf("a multiplica√ß√£o eh: %d\n", res);
         break;
     case 4 :
         printf("insira dois numeros\n");
         scanf("%d %d", &numba, &numba2);
         res=numba/numba2;
-        printf("a divis„o eh: %d\n", res);
+        printf("a divis√£o eh: %d\n", res);
         break;
     default :
-        printf("a opÁ„o eh invalida.\n");
+        printf("a op√ß√£o eh invalida.\n");
     }
 */
 
 /* EX019
     int num;
-    printf("Digite um n˙mero: ");
+    printf("Digite um n√∫mero: ");
     scanf("%d", &num);
-    if (num % 3 == 0 && num % 5 == 0) printf("O n˙mero È divisÌvel por 3 e 5.");
-    else if (num % 3 == 0) printf("O n˙mero È divisÌvel por 3.");
-    else if (num % 5 == 0) printf("O n˙mero È divisÌvel por 5.");
-    else printf("O n˙mero n„o È divisÌvel por 3 ou 5.");
+    if (num % 3 == 0 && num % 5 == 0) printf("O n√∫mero √© divis√≠vel por 3 e 5.");
+    else if (num % 3 == 0) printf("O n√∫mero √© divis√≠vel por 3.");
+    else if (num % 5 == 0) printf("O n√∫mero √© divis√≠vel por 5.");
+    else printf("O n√∫mero n√£o √© divis√≠vel por 3 ou 5.");
 */
 
 /* EX020
@@ -374,12 +374,12 @@ int main()
 
 /* EX021
     int nm1, nm2, op, res;
-    printf("escolha uma das opÁoes abaixo.\n");
+    printf("escolha uma das op√ßoes abaixo.\n");
     printf("1- Soma de 2 numeros.\n");
-    printf("2- DiferenÁa entre 2 numeros (maior pelo menor).\n");
-    printf("3- Produto entre 2 n˙meros.\n");
+    printf("2- Diferen√ßa entre 2 numeros (maior pelo menor).\n");
+    printf("3- Produto entre 2 n√∫meros.\n");
     printf("4- Divisao entre 2 numeros (o denominador nao pode ser zero).\n");
-    printf("OpÁ„o: ");
+    printf("Op√ß√£o: ");
     scanf("%d", &op);
 
     switch(op){
@@ -428,7 +428,7 @@ int main()
     int idade, temposervi;
     printf("Digite a idade do trabalhador: ");
     scanf("%d", &idade);
-    printf("agora digite seu tempo de serviÁo: ");
+    printf("agora digite seu tempo de servi√ßo: ");
     scanf("%d", &temposervi);
     if((idade>=65)||(temposervi>=30)||(idade>=60)&&(temposervi>=25)){
         printf("voce pode se aposentar.");
@@ -492,20 +492,20 @@ int main()
     if (a != 0)
     {
         delta = b * b - 4 * a * c;
-        if (delta < 0) printf("N„o existe raiz.");
+        if (delta < 0) printf("N√£o existe raiz.");
         else if (delta == 0)
         {
             x1 = -b / (2 * a);
-            printf("Raiz ˙nica: %f", x1);
+            printf("Raiz √∫nica: %f", x1);
         }
         else
         {
             x1 = (-b + sqrt(delta)) / (2 * a);
             x2 = (-b - sqrt(delta)) / (2 * a);
-            printf("RaÌzes reais: %f e %f", x1, x2);
+            printf("Ra√≠zes reais: %f e %f", x1, x2);
         }
     }
-    else printf("N„o È equaÁ„o de segundo grau.");
+    else printf("N√£o √© equa√ß√£o de segundo grau.");
 */
 
 /* EX026
@@ -541,21 +541,21 @@ int main()
     int num1, num2, num3, opcao;
     float media;
 
-    printf("Digite o primeiro n˙mero: ");
+    printf("Digite o primeiro n√∫mero: ");
     scanf("%d", &num1);
 
-    printf("Digite o segundo n˙mero: ");
+    printf("Digite o segundo n√∫mero: ");
     scanf("%d", &num2);
 
-    printf("Digite o terceiro n˙mero: ");
+    printf("Digite o terceiro n√∫mero: ");
     scanf("%d", &num3);
 
-    printf("Escolha uma opÁ„o:\n");
-    printf("1 - GeomÈtrica\n");
+    printf("Escolha uma op√ß√£o:\n");
+    printf("1 - Geom√©trica\n");
     printf("2 - Ponderada\n");
-    printf("3 - HarmÙnica\n");
-    printf("4 - AritmÈtica\n");
-    printf("OpÁ„o: ");
+    printf("3 - Harm√¥nica\n");
+    printf("4 - Aritm√©tica\n");
+    printf("Op√ß√£o: ");
     scanf("%d", &opcao);
 
     switch (opcao) {
@@ -744,38 +744,38 @@ int main()
     printf("Digite o dia: ");
     scanf("%d", &dia);
 
-    printf("Digite o mÍs: ");
+    printf("Digite o m√™s: ");
     scanf("%d", &mes);
 
     printf("Digite o ano: ");
     scanf("%d", &ano);
 
     if (mes < 1 || mes > 12) {
-        printf("MÍs inv·lido.");
+        printf("M√™s inv√°lido.");
     } else if (dia < 1 || dia > 31) {
-        printf("Dia inv·lido.");
+        printf("Dia inv√°lido.");
     } else if (mes == 4 || mes == 6 || mes == 9 || mes == 11) {
         if (dia > 30) {
-            printf("Dia inv·lido.");
+            printf("Dia inv√°lido.");
         } else {
-            printf("Data v·lida.");
+            printf("Data v√°lida.");
         }
     } else if (mes == 2) {
         if (ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0) {
             if (dia > 29) {
-                printf("Dia inv·lido.");
+                printf("Dia inv√°lido.");
             } else {
-                printf("Data v·lida.");
+                printf("Data v√°lida.");
             }
         } else {
             if (dia > 28) {
-                printf("Dia inv·lido.");
+                printf("Dia inv√°lido.");
             } else {
-                printf("Data v·lida.");
+                printf("Data v√°lida.");
             }
         }
     } else {
-        printf("Data v·lida.");
+        printf("Data v√°lida.");
     }
 */
 
@@ -884,10 +884,10 @@ int main()
     float salario, reajuste, bonus;
     int tempo;
 
-    printf("Digite o sal·rio atual do funcion·rio: ");
+    printf("Digite o sal√°rio atual do funcion√°rio: ");
     scanf("%f", &salario);
 
-    printf("Digite o tempo de serviÁo do funcion·rio (em anos): ");
+    printf("Digite o tempo de servi√ßo do funcion√°rio (em anos): ");
     scanf("%d", &tempo);
 
     if (salario <= 500.0) reajuste = 0.25;
@@ -902,7 +902,7 @@ int main()
     else if (tempo <= 10) bonus = 300.0;
     else bonus = 500.0;
 
-    printf("O sal·rio reajustado e: %f", salario * (1 + reajuste) + bonus);
+    printf("O sal√°rio reajustado e: %f", salario * (1 + reajuste) + bonus);
 */
 
 /*
