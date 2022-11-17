@@ -54,12 +54,12 @@ int main()
     int soma = 0;
     while (contador < 10)
     {
-        printf("Digite um número: ");
+        printf("Digite um nÃºmero: ");
         scanf("%d", &num);
         soma = soma + num;
         contador += 1;
     }
-    printf("A soma dos valores é: %d", soma);
+    printf("A soma dos valores Ã©: %d", soma);
 */
 /* EX006
     int contador = 0;
@@ -68,12 +68,12 @@ int main()
 
     while (contador < 10)
     {
-        printf("Digite um número: ");
+        printf("Digite um nÃºmero: ");
         scanf("%d", &num);
         soma = soma + num;
         contador += 1;
     }
-    printf("A média dos valores é: %d", soma/10);
+    printf("A mÃ©dia dos valores Ã©: %d", soma/10);
 */
 /* EX007
     int contador = 0;
@@ -82,7 +82,7 @@ int main()
     int media = 0;
     while (contador < 10)
     {
-        printf("Digite um número: ");
+        printf("Digite um nÃºmero: ");
         scanf("%d", &num);
         if (num > 0)
         {
@@ -91,7 +91,7 @@ int main()
         }
 
     }
-    printf("A média dos valores é: %d", soma/10);
+    printf("A mÃ©dia dos valores Ã©: %d", soma/10);
 */
 /* EX008
     int contador = 0;
@@ -105,7 +105,7 @@ int main()
         //Desbuggar a primeira vez que digitar numeros
         maior = contador == 0 ? num : maior;
         menor = contador == 0 ? num : menor;
-        // Testar até pegar o maior e menor número digitado
+        // Testar atÃ© pegar o maior e menor nÃºmero digitado
         maior = num > maior ? num : maior;
         menor = num < menor ? num : menor;
         contador = contador + 1;
@@ -117,7 +117,7 @@ int main()
     int num = 0;
     int impar = 1;
 
-    printf("Digite um número: ");
+    printf("Digite um nÃºmero: ");
     scanf("%d", &num);
 
     while (contador < num)
@@ -139,14 +139,14 @@ int main()
         contador = contador + 1;
 
     }
-    printf("A soma é: %d", soma);
+    printf("A soma Ã©: %d", soma);
 */
 /* EX011
     int contador = 0;
     int num = 0;
     int soma = 0;
 
-    printf("Digite um número: ");
+    printf("Digite um nÃºmero: ");
     scanf("%d", &num);
 
     while (contador < num + 1)
@@ -160,7 +160,7 @@ int main()
     int contador = 0;
     int soma = 0;
 
-    printf("Digite um número: ");
+    printf("Digite um nÃºmero: ");
     scanf("%d", &num);
 
     for(contador = 1; contador <= (num - 1); contador++)
@@ -170,7 +170,7 @@ int main()
             soma = soma + contador;
         }
     }
-    printf("A soma dos divisores é: %d", soma);
+    printf("A soma dos divisores Ã©: %d", soma);
 */
 /* EX013
     int contador = 0;
@@ -180,11 +180,11 @@ int main()
     {
         soma = contador % 3 == 0 || contador % 5 == 0 ? soma + contador : soma;
     }
-   printf("A soma dos números é: %d", soma);
+   printf("A soma dos nÃºmeros Ã©: %d", soma);
 */
 /* EX014
     int d1, d2, num, contador = 0;
-    printf("Quantas vezes você quer lançar os dados? ");
+    printf("Quantas vezes vocÃª quer lanÃ§ar os dados? ");
     scanf("%d", &num);
 
     srand(time(NULL));
@@ -193,7 +193,7 @@ int main()
     {
         d1 = (rand() % 5) + 1;
         d2 = (rand() % 5) + 1;
-        printf("Lançamento %d: ", contador);
+        printf("LanÃ§amento %d: ", contador);
         if (d1 != d2)
         {
             if (d1 > d2)
@@ -217,14 +217,14 @@ int main()
 
     while (num != 0)
     {
-        printf("Digite um número qualquer: ");
+        printf("Digite um nÃºmero qualquer: ");
         scanf("%f", &num);
 
-        printf("O quadrado dele é: %.0f\n", num * num);
+        printf("O quadrado dele Ã©: %.0f\n", num * num);
 
-        printf("O cubo dele é: %.0f\n", num * num * num);
+        printf("O cubo dele Ã©: %.0f\n", num * num * num);
 
-        printf("A raíz quadrada dele é: %.2f\n", sqrt(num));
+        printf("A raÃ­z quadrada dele Ã©: %.2f\n", sqrt(num));
     }
 */
 /* EX016
@@ -235,37 +235,37 @@ int main()
     while (index != 5)
     {
         printf
-        ("Digite a opção desejada:\n(1)Adição\n(2)Subtração\n(3)Multiplicação\n(4)Divisão\n(5)Saída\n");
+        ("Digite a opÃ§Ã£o desejada:\n(1)AdiÃ§Ã£o\n(2)SubtraÃ§Ã£o\n(3)MultiplicaÃ§Ã£o\n(4)DivisÃ£o\n(5)SaÃ­da\n");
         scanf("%d", &index);
 
 
         if (index == 5)
         {
-            printf("O código foi finalizado!");
+            printf("O cÃ³digo foi finalizado!");
             break;
         }
 
 
-        printf("Agora digite 2 números para fazer o cálculo: ");
+        printf("Agora digite 2 nÃºmeros para fazer o cÃ¡lculo: ");
         scanf("%f %f", &num1, &num2);
 
         switch (index)
         {
-            //Adição
+            //AdiÃ§Ã£o
             case 1:
-            printf("A soma dos números é: %.0f\n", num1 + num2);
+            printf("A soma dos nÃºmeros Ã©: %.0f\n", num1 + num2);
             break;
-            //Subtarção
+            //SubtarÃ§Ã£o
             case 2:
-            printf("A subtração dos números é: %.0f\n", num1 - num2);
+            printf("A subtraÃ§Ã£o dos nÃºmeros Ã©: %.0f\n", num1 - num2);
             break;
-            // Multiplicação
+            // MultiplicaÃ§Ã£o
             case 3:
-            printf("A multiplicação dos números é: %.0f\n", num1 * num2);
+            printf("A multiplicaÃ§Ã£o dos nÃºmeros Ã©: %.0f\n", num1 * num2);
             break;
-            // Divisão
+            // DivisÃ£o
             case 4:
-            printf("A divisão dos números é: %.2f\n", num1 / num2);
+            printf("A divisÃ£o dos nÃºmeros Ã©: %.2f\n", num1 / num2);
             break;
         }
     }
@@ -283,7 +283,7 @@ int main()
     }
 
     printf
-    ("A quantidade de anos necessária para que Zé seja maior que Chico são %d anos", anos + 1);
+    ("A quantidade de anos necessÃ¡ria para que ZÃ© seja maior que Chico sÃ£o %d anos", anos + 1);
 */
 /* EX018
     double salario = 2000;
@@ -370,7 +370,7 @@ int main()
         num++;
         goto inicio;
     }
-    printf("A soma dos primos é: %d", soma);
+    printf("A soma dos primos Ã©: %d", soma);
 */
 /* EX021
     int num = 0, resultado = 0, contador = 0, divisao = 0, alcance = 0, soma = 0, aumento = 0;
