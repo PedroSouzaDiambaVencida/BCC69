@@ -78,7 +78,7 @@ int data(int dia, int mes, int ano)
         break;
 
     default:
-        printf("Desculpe, eu n„o entendi")
+        printf("Desculpe, eu n√£o entendi")
         break;
     }
 }
@@ -382,7 +382,7 @@ int main (){
     char ope;
 
     printf("*calculadora basica*");
-    printf("escolha uma opÁ„o:\n soma = +\n subtracao = -\n multiplicacao = *\n divisao = / \n opcao: ");
+    printf("escolha uma op√ß√£o:\n soma = +\n subtracao = -\n multiplicacao = *\n divisao = / \n opcao: ");
     scanf("%c", &ope);
     printf("agora digite um valor para operacao: ");
     scanf("%f", &num1);
@@ -601,7 +601,7 @@ void triangulo (int n){
 
 }*/
 
-//n„o existe ex 22
+//n√£o existe ex 22
 
 /* EX023
 int triangle_create(int altura)
