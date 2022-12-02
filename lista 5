@@ -30,7 +30,7 @@ int main()
             printf("digite o valor dentro do %d vetor: ", j+1);
             scanf("%d", &vet[i]);
         }
-    printf("agora digite a posição do vetor que voce deseja somar: ");
+    printf("agora digite a posiÃ§Ã£o do vetor que voce deseja somar: ");
     scanf("%d", &x);
     printf("agora a do outro: ");
     scanf("%d", &y);
@@ -152,7 +152,7 @@ int main(void)
   int A[6];
   for (int i = 0; i < 6; i++)
   {
-    printf("Digite o %dº valor: ", i + 1);
+    printf("Digite o %dÂº valor: ", i + 1);
     scanf("%d", &A[i]);
   }
   int soma_pares = 0;
@@ -166,12 +166,12 @@ int main(void)
     }
     else
     {
-      printf("Ímpar: %d\n", A[i]);
+      printf("Ãmpar: %d\n", A[i]);
       qtd_impares++;
     }
   }
   printf("Soma dos pares: %d\n", soma_pares);
-  printf("Quantidade de ímpares: %d\n", qtd_impares);
+  printf("Quantidade de Ã­mpares: %d\n", qtd_impares);
   return 0;
 } */
 
@@ -319,7 +319,7 @@ int main(void)
   }
   else
   {
-    printf("Não encontrado\n");
+    printf("NÃ£o encontrado\n");
   }
   return 0;
 }*/
@@ -379,7 +379,7 @@ int main(void){
 
     printf("agora, escolha uma opcao:");
     printf("(1)somar as duas matrizes\n(2)subtrair a primeira matriz da segunda\n");
-    printf("(3)adicionar uma constante às duas matrizes\n(4)imprimir as matrizes");
+    printf("(3)adicionar uma constante Ã s duas matrizes\n(4)imprimir as matrizes");
     printf("sua opcao: ");
     scanf("%d", &opt);
 
