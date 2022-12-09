@@ -142,7 +142,7 @@ int main() {
         posicao++;
     }
     string[posicao] = '\0';
-    printf("String sem espaços em branco: %s\n", string);
+    printf("String sem espaÃ§os em branco: %s\n", string);
 }*/
 
 /* EX008
@@ -324,16 +324,16 @@ void main()
 
   do
   {
-    printf("\n(a) Ler uma string S1 (tamanho máximo 20 caracteres);\n");
+    printf("\n(a) Ler uma string S1 (tamanho mÃ¡ximo 20 caracteres);\n");
     printf("(b) Imprimir o tamanho da string S1;\n");
-    printf("(c) Comparar a string S1 com uma nova string S2 fornecida pelo usuário e imprimir o resultado da comparação;\n");
-    printf("(d) Concatenar a string S1 com uma nova string S2 e imprimir na tela o resultado da concatenação;\n");
+    printf("(c) Comparar a string S1 com uma nova string S2 fornecida pelo usuÃ¡rio e imprimir o resultado da comparaÃ§Ã£o;\n");
+    printf("(d) Concatenar a string S1 com uma nova string S2 e imprimir na tela o resultado da concatenaÃ§Ã£o;\n");
     printf("(e) Imprimir a string S1 de forma reversa;\n");
-    printf("(f) Contar quantas vezes um dado caractere aparece na string S1. Esse caractere desse ser informado pelo usuário;\n");
-    printf("(g) Substituir a primeira ocorrência do caractere C1 da string S1 pelo caractere C2. Os caracteres C1 e C2 serão lidos pelo usuário;\n");
-    printf("(h) Verificar se uma string S2 é substring de S1. A string S2 deve ser informada pelo usuário;\n");
-    printf("(i) Retornar uma substring da string S1. Para isso o usuário deve informar a partir de qual posição deve ser criada a substring e qual é o tamanho da substring.\n");
-    printf("Digite a opção desejada:\n");
+    printf("(f) Contar quantas vezes um dado caractere aparece na string S1. Esse caractere desse ser informado pelo usuÃ¡rio;\n");
+    printf("(g) Substituir a primeira ocorrÃªncia do caractere C1 da string S1 pelo caractere C2. Os caracteres C1 e C2 serÃ£o lidos pelo usuÃ¡rio;\n");
+    printf("(h) Verificar se uma string S2 Ã© substring de S1. A string S2 deve ser informada pelo usuÃ¡rio;\n");
+    printf("(i) Retornar uma substring da string S1. Para isso o usuÃ¡rio deve informar a partir de qual posiÃ§Ã£o deve ser criada a substring e qual Ã© o tamanho da substring.\n");
+    printf("Digite a opÃ§Ã£o desejada:\n");
     scanf("%c", &op);
     getchar();
 
@@ -345,7 +345,7 @@ void main()
       str1[strlen(str1) - 1] = '\0';
       break;
     case 'b':
-      printf("O tamanho da string S1 é %d\n", strlen(str1));
+      printf("O tamanho da string S1 Ã© %d\n", strlen(str1));
       break;
     case 'c':
       printf("\nDigite a string S2: ");
@@ -355,7 +355,7 @@ void main()
     case 'd':
       printf("\nDigite a string S2: ");
       fgets(str2, 20, stdin);
-      printf("O resultado da concatenação é \"%s\"\n", strcat(str1, str2));
+      printf("O resultado da concatenaÃ§Ã£o Ã© \"%s\"\n", strcat(str1, str2));
       break;
     case 'e':
       for (i = strlen(str1) - 1; i >= 0; i--)
@@ -389,22 +389,22 @@ void main()
           break;
         }
       }
-      printf("A string S1 agora é %s\n", str1);
+      printf("A string S1 agora Ã© %s\n", str1);
       break;
     case 'h':
       printf("\nDigite a string S2: ");
       fgets(str2, 20, stdin);
       if (strstr(str1, str2) != NULL)
       {
-        printf("A string S2 é substring de S1\n");
+        printf("A string S2 Ã© substring de S1\n");
       }
       else
       {
-        printf("A string S2 não é substring de S1\n");
+        printf("A string S2 nÃ£o Ã© substring de S1\n");
       }
       break;
     case 'i':
-      printf("\nDigite a posição: ");
+      printf("\nDigite a posiÃ§Ã£o: ");
       scanf("%d", &pos);
       printf("\nDigite o tamanho: ");
       scanf("%d", &tam);
@@ -415,7 +415,7 @@ void main()
       }
       substring[i + 1] = '\0';
 
-      printf("A substring é %s\n", substring);
+      printf("A substring Ã© %s\n", substring);
       break;
     }
   } while (op >= 'a' || op <= 'i');
@@ -441,5 +441,5 @@ void main()
       max_prod = prod;
     }
   }
-  printf("O maior produto é %d\n", max_prod);
+  printf("O maior produto Ã© %d\n", max_prod);
 }*/
