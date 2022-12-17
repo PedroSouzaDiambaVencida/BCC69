@@ -36,7 +36,7 @@ int main() {
     fgets(pessoa1.nome, 50, stdin);
     printf("sua idade? ");
     scanf("%d", &pessoa1.idade);
-    printf("e seu endereço? ");
+    printf("e seu endereÃ§o? ");
     scanf("%d", &pessoa1.endereco);
 
     printf("seu nome eh: [%s]\nsua idade [%d]\ne seu endereco eh [%d]", pessoa1.nome, pessoa1.idade, pessoa1.endereco);
@@ -56,7 +56,7 @@ int main (){
     struct estudante alunos[5];
 
     for(int i = 0; i < 5; i++){
-        printf("qual o nome do %d° aluno? ", i+1);
+        printf("qual o nome do %dÂ° aluno? ", i+1);
         fflush(stdin);
         fgets(alunos[i].nome, 50, stdin);
         printf("e o seu curso? " );
@@ -70,7 +70,7 @@ int main (){
     printf("\n");
 
     for(int x = 0; x < 5; x++){
-        printf("o nome do %d° aluno eh: %s", x+1, alunos[x].nome);
+        printf("o nome do %dÂ° aluno eh: %s", x+1, alunos[x].nome);
         printf("o seu curso eh: %s", alunos[x].curso);
         printf("e o seu numero de matricula eh: %d", alunos[x].matricula);
         printf("\n");
@@ -162,7 +162,7 @@ int main (){
     printf("Coloque o valor de c para o vetor v: ");
     scanf("%f", &v.c);
 
-    printf("O valor de X é: %f\n", u.a + v.a);
+    printf("O valor de X Ã©: %f\n", u.a + v.a);
     printf("O valor de Y: %f\n", u.b + v.b);
     printf("O valor de Z: %f\n", u.c + v.c);
 
@@ -189,35 +189,35 @@ struct Funcionario {
 void main() {
   struct Funcionario funcionario;
 
-  printf("Digite o nome do funcionário:\n");
+  printf("Digite o nome do funcionÃ¡rio:\n");
   setbuf(stdin, NULL);
   fgets(funcionario.nome, 100, stdin);
 
-  printf("Digite a idade do funcionário:\n");
+  printf("Digite a idade do funcionÃ¡rio:\n");
   scanf("%d", &funcionario.idade);
 
-  printf("Digite o sexo do funcionário (M/F):\n");
+  printf("Digite o sexo do funcionÃ¡rio (M/F):\n");
   scanf(" %c", &funcionario.sexo);
 
-  printf("Digite o CPF do funcionário:\n");
+  printf("Digite o CPF do funcionÃ¡rio:\n");
   setbuf(stdin, NULL);
   fgets(funcionario.cpf, 12, stdin);
 
-  printf("Digite o dia de nascimento do funcionário:\n");
+  printf("Digite o dia de nascimento do funcionÃ¡rio:\n");
   scanf("%d", &funcionario.data_nascimento.dia);
-  printf("Digite o mês de nascimento do funcionário:\n");
+  printf("Digite o mÃªs de nascimento do funcionÃ¡rio:\n");
   scanf("%d", &funcionario.data_nascimento.mes);
-  printf("Digite o ano de nascimento do funcionário:\n");
+  printf("Digite o ano de nascimento do funcionÃ¡rio:\n");
   scanf("%d", &funcionario.data_nascimento.ano);
 
-  printf("Digite o código do setor do funcionário:\n");
+  printf("Digite o cÃ³digo do setor do funcionÃ¡rio:\n");
   scanf("%d", &funcionario.codigo_setor);
 
-  printf("Digite o cargo do funcionário:\n");
+  printf("Digite o cargo do funcionÃ¡rio:\n");
   setbuf(stdin, NULL);
   fgets(funcionario.cargo, 30, stdin);
 
-  printf("Digite o salário do funcionário:\n");
+  printf("Digite o salÃ¡rio do funcionÃ¡rio:\n");
   scanf("%f", &funcionario.salario);
 
   printf("\n\n\n");
@@ -227,9 +227,9 @@ void main() {
   printf("Sexo: %c\n", funcionario.sexo);
   printf("CPF: %s\n", funcionario.cpf);
   printf("Data de nascimento: %d/%d/%d\n", funcionario.data_nascimento.dia, funcionario.data_nascimento.mes, funcionario.data_nascimento.ano);
-  printf("Código do setor: %d\n", funcionario.codigo_setor);
+  printf("CÃ³digo do setor: %d\n", funcionario.codigo_setor);
   printf("Cargo: %s\n", funcionario.cargo);
-  printf("Salário: %.2f\n", funcionario.salario);
+  printf("SalÃ¡rio: %.2f\n", funcionario.salario);
 }*/
 
 /* EX007
@@ -250,7 +250,7 @@ int main()
     setbuf(stdin, NULL);
     fgets(pessoas[i].nome, 100, stdin);
 
-    printf("Digite o endereço da pessoa %d: ", i + 1);
+    printf("Digite o endereÃ§o da pessoa %d: ", i + 1);
     setbuf(stdin, NULL);
     fgets(pessoas[i].endereco, 100, stdin);
 
@@ -260,7 +260,7 @@ int main()
     printf("\n");
   }
 
-  // ordene as pessoas pelo nome em ordem alfabética
+  // ordene as pessoas pelo nome em ordem alfabÃ©tica
   int ordem[5];
   for (int i = 0; i < 5; i++)
   {
@@ -283,7 +283,7 @@ int main()
   for (int i = 0; i < 5; i++)
   {
     printf("Nome: %s\n", pessoas[ordem[i]].nome);
-    printf("Endereço: %s\n", pessoas[ordem[i]].endereco);
+    printf("EndereÃ§o: %s\n", pessoas[ordem[i]].endereco);
     printf("Telefone: %s\n", pessoas[ordem[i]].telefone);
     printf("\n");
   }
@@ -339,7 +339,7 @@ int main()
     fgets(carros[i].marca, 15, stdin);
     printf("Digite o ano do carro %d: ", i + 1);
     scanf("%d", &carros[i].ano);
-    printf("Digite o preço do carro %d: ", i + 1);
+    printf("Digite o preÃ§o do carro %d: ", i + 1);
     scanf("%f", &carros[i].preco);
     printf("\n");
   }
@@ -353,7 +353,7 @@ int main()
     {
       if (carros[i].preco < p)
       {
-        printf("Marca: %s\nAno: %d\nPreço: %.2f\n\n", carros[i].marca, carros[i].ano, carros[i].preco);
+        printf("Marca: %s\nAno: %d\nPreÃ§o: %.2f\n\n", carros[i].marca, carros[i].ano, carros[i].preco);
       }
     }
     printf("Digite um valor para p: ");
@@ -376,7 +376,7 @@ int main()
   struct Livro livros[5];
   for (int i = 0; i < 5; i++)
   {
-    printf("Digite o título do livro %d: ", i + 1);
+    printf("Digite o tÃ­tulo do livro %d: ", i + 1);
     setbuf(stdin, NULL);
     fgets(livros[i].titulo, 30, stdin);
     printf("Digite o autor do livro %d: ", i + 1);
@@ -388,13 +388,13 @@ int main()
   }
 
   char titulo[30];
-  printf("Digite o título do livro que deseja buscar: ");
+  printf("Digite o tÃ­tulo do livro que deseja buscar: ");
   scanf("%s", titulo);
   for (int i = 0; i < 5; i++)
   {
     if (strcmp(livros[i].titulo, titulo) == 0)
     {
-      printf("Título: %s\nAutor: %s\nAno: %d\n\n", livros[i].titulo, livros[i].autor, livros[i].ano);
+      printf("TÃ­tulo: %s\nAutor: %s\nAno: %d\n\n", livros[i].titulo, livros[i].autor, livros[i].ano);
     }
   }
 
@@ -425,7 +425,7 @@ int main()
     fgets(compromissos[i].compromisso, 60, stdin);
     printf("Digite o dia do compromisso %d: ", i + 1);
     scanf("%d", &compromissos[i].data.dia);
-    printf("Digite o mês do compromisso %d: ", i + 1);
+    printf("Digite o mÃªs do compromisso %d: ", i + 1);
     scanf("%d", &compromissos[i].data.mes);
     printf("Digite o ano do compromisso %d: ", i + 1);
     scanf("%d", &compromissos[i].data.ano);
@@ -433,7 +433,7 @@ int main()
   }
 
   int m, a;
-  printf("Digite um mês: ");
+  printf("Digite um mÃªs: ");
   scanf("%d", &m);
   printf("Digite um ano: ");
   scanf("%d", &a);
@@ -443,10 +443,10 @@ int main()
     {
       if (compromissos[i].data.mes == m && compromissos[i].data.ano == a)
       {
-        printf("Compromisso: %s\nDia: %d\nMês: %d\nAno: %d\n\n", compromissos[i].compromisso, compromissos[i].data.dia, compromissos[i].data.mes, compromissos[i].data.ano);
+        printf("Compromisso: %s\nDia: %d\nMÃªs: %d\nAno: %d\n\n", compromissos[i].compromisso, compromissos[i].data.dia, compromissos[i].data.mes, compromissos[i].data.ano);
       }
     }
-    printf("Digite um mês: ");
+    printf("Digite um mÃªs: ");
     scanf("%d", &m);
     printf("Digite um ano: ");
     scanf("%d", &a);
@@ -468,12 +468,12 @@ int main()
   struct Eletrodomestico eletrodomesticos[5];
   for (int i = 0; i < 5; i++)
   {
-    printf("Digite o nome do eletrodoméstico %d: ", i + 1);
+    printf("Digite o nome do eletrodomÃ©stico %d: ", i + 1);
     setbuf(stdin, NULL);
     fgets(eletrodomesticos[i].nome, 15, stdin);
-    printf("Digite a potência do eletrodoméstico %d: ", i + 1);
+    printf("Digite a potÃªncia do eletrodomÃ©stico %d: ", i + 1);
     scanf("%f", &eletrodomesticos[i].potencia);
-    printf("Digite o tempo ativo do eletrodoméstico %d: ", i + 1);
+    printf("Digite o tempo ativo do eletrodomÃ©stico %d: ", i + 1);
     scanf("%f", &eletrodomesticos[i].tempo_ativo);
     printf("\n");
   }
@@ -489,7 +489,7 @@ int main()
   printf("Consumo total: %.2f\n", consumo_total);
   for (int i = 0; i < 5; i++)
   {
-    printf("Consumo relativo do eletrodoméstico %d: %.2f%%\n", i + 1, (eletrodomesticos[i].potencia * eletrodomesticos[i].tempo_ativo * t) / consumo_total * 100);
+    printf("Consumo relativo do eletrodomÃ©stico %d: %.2f%%\n", i + 1, (eletrodomesticos[i].potencia * eletrodomesticos[i].tempo_ativo * t) / consumo_total * 100);
   }
 
   return 0;
@@ -509,12 +509,12 @@ int main()
   struct Produto produtos[5];
   for (int i = 0; i < 5; i++)
   {
-    printf("Digite o código do produto %d: ", i + 1);
+    printf("Digite o cÃ³digo do produto %d: ", i + 1);
     scanf("%d", &produtos[i].codigo);
     printf("Digite o nome do produto %d: ", i + 1);
     setbuf(stdin, NULL);
     fgets(produtos[i].nome, 15, stdin);
-    printf("Digite o preço do produto %d: ", i + 1);
+    printf("Digite o preÃ§o do produto %d: ", i + 1);
     scanf("%f", &produtos[i].preco);
     printf("Digite a quantidade do produto %d: ", i + 1);
     scanf("%d", &produtos[i].quantidade);
@@ -522,7 +522,7 @@ int main()
   }
 
   int codigo, quantidade;
-  printf("Digite o código do produto que deseja comprar: ");
+  printf("Digite o cÃ³digo do produto que deseja comprar: ");
   scanf("%d", &codigo);
   while (codigo != 0)
   {
@@ -539,11 +539,11 @@ int main()
         }
         else
         {
-          printf("Não há quantidade suficiente para atender ao pedido!\n\n");
+          printf("NÃ£o hÃ¡ quantidade suficiente para atender ao pedido!\n\n");
         }
       }
     }
-    printf("Digite o código do produto que deseja comprar: ");
+    printf("Digite o cÃ³digo do produto que deseja comprar: ");
     scanf("%d", &codigo);
   }
 
@@ -569,9 +569,9 @@ int main()
   struct Voo voos[5];
   for (int i = 0; i < 5; i++)
   {
-    printf("Digite o código do aeroporto de origem do voo %d: ", i + 1);
+    printf("Digite o cÃ³digo do aeroporto de origem do voo %d: ", i + 1);
     scanf("%d", &voos[i].codigo_origem);
-    printf("Digite o código do aeroporto de destino do voo %d: ", i + 1);
+    printf("Digite o cÃ³digo do aeroporto de destino do voo %d: ", i + 1);
     scanf("%d", &voos[i].codigo_destino);
     printf("\n");
   }
@@ -579,7 +579,7 @@ int main()
   struct Aeroporto aeroportos[5];
   for (int i = 0; i < 5; i++)
   {
-    printf("Digite o código do aeroporto %d: ", i + 1);
+    printf("Digite o cÃ³digo do aeroporto %d: ", i + 1);
     scanf("%d", &aeroportos[i].codigo);
     aeroportos[i].voos_saindo = 0;
     aeroportos[i].voos_chegando = 0;
@@ -708,7 +708,7 @@ int main()
       printf("Digite o ano do filme %d do diretor %d: ", j + 1, i + 1);
       scanf("%d", &diretores[i].filmes[j].ano);
 
-      printf("Digite a duração do filme %d do diretor %d: ", j + 1, i + 1);
+      printf("Digite a duraÃ§Ã£o do filme %d do diretor %d: ", j + 1, i + 1);
       scanf("%d", &diretores[i].filmes[j].duracao);
     }
     printf("\n");
